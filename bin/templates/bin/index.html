@@ -1,0 +1,54 @@
+{% extends 'bin/base.html' %}
+    {% block body %}
+       <title>Home Page</title>
+    {% endblock %}
+
+  {%  block add %}
+      {% load staticfiles %}
+      <nav class="navbar navbar-inverse navbar-fixed-top ">
+          <div class="container-fluid">
+
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#" style="color:lightgreen"> CodeJone</a>
+              </div>
+
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+              </ul>
+
+             <ul class="nav navbar-nav">
+                <li ><a href="#"><span></span> BLOG</a></li>
+              </ul>
+
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="{% url 'bin:log_in'  %}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              </ul>
+
+          </div>
+      </nav>
+
+      <div class="container">
+         <h3>{{ message }}</h3>
+
+      <div class="container" style="margin-top:50px">
+  <h3>Fixed Navbar</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
+      <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
+    </div>
+    <div class="col-md-4">
+      <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
+      <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
+    </div>
+    <div class="col-md-4">
+      <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
+      <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
+    </div>
+  </div>
+</div>
+      </div>
+
+  {% endblock %}
+
