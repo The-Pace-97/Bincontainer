@@ -1,0 +1,14 @@
+body {
+    background-color: #dddddd;
+}
+
+.navbar{
+    border-radius: 0;
+}
+
+.topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
